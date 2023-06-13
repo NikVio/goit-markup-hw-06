@@ -920,6 +920,7 @@ img {
   justify-content: center;
   fill: transparent;
   transition: background-color var(--tra-speed) var(--tra-function),
+    border var(--tra-speed) var(--tra-function),
     fill var(--tra-speed) var(--tra-function);
 }
 
