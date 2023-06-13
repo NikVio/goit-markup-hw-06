@@ -682,17 +682,16 @@ img {
 /* Footer Form */
 
 .footer-form {
-  margin-left: auto;
+  display: flex;
+  gap: 24px;
 }
 
 .footer-field {
-  display: flex;
-  gap: 24px;
-  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .footer-input {
-  min-width: 264px;
+  width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -725,7 +724,7 @@ img {
   line-height: 1.5;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   letter-spacing: 0.04em;
   color: var(--btn-text-color);
   background-color: var(--btn-color);
@@ -738,6 +737,7 @@ img {
 
 .footer-btn-icon {
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 .footer-btn:hover,
@@ -761,7 +761,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   transform: translate(-50%, -50%) scaleY(1);
   width: 408px;
   min-height: 584px;
@@ -777,6 +777,7 @@ img {
 }
 
 .close-modal {
+  position: absolute;
   width: 24px;
   height: 24px;
   top: 24px;
@@ -784,12 +785,10 @@ img {
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin-bottom: 24px;
   cursor: pointer;
 
   transition: background-color var(--tra-speed) var(--tra-function),
@@ -828,9 +827,6 @@ img {
 }
 
 .modal-label {
-}
-
-.input-label {
   display: block;
   margin-bottom: 4px;
 }
@@ -855,6 +851,7 @@ img {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   padding-left: 38px;
   outline: transparent;
   transition: border-color var(--tra-speed) var(--tra-function);
@@ -886,6 +883,8 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: transparent;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
 
   padding: 8px 16px 8px 16px;
   resize: none;
